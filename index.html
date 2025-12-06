@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#Finance">Project</a>
+        <a href="#interest_new">Interest</a>
+        <a href="Ivy Lu_CV.pdf" target="_blank">Resume</a>
+        <a href="#contact_info">Contact</a>
+    </nav>
+<!-- -----Home---------------------------------- -->
+    <div id="home" class="home">
+        <div class="home-text">
+            <h1>Hello, I'm Ivy Lu</h1>
+            <p>An AI project manager, foodie, and travel enthusiast. 
+                Just graduated from National Taiwan University in 2025 and excited to continue my studies in the U.S. in Fall 2026. 
+                I love blending curiosity and creativity to explore new ideas and experiences. 
+            </p>
+        </div>
+        <div class="home-img">
+            <img src="images/portrait1.jpg" alt="Ivy Lu">
+        </div>
+    </div>
+<!-- -----about_me---------------------------------------------------------------------------- -->
+<div id = 'aboutMe'>
+    <div class = 'container'>
+        <h1 class = 'sub-title'>View My Journey</h1>
+        <br>
+        <br>      
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab('skills')">Skills</button>
+            <button class="tab-button" onclick="showTab('internship')">Experience</button>
+            <button class="tab-button" onclick="showTab('experience')">Involvement</button>
+            <button class="tab-button" onclick="showTab('education')">Education</button>
+        </div>
+        <!-- -----skills--------------------------------------------------------------------- -->
+        <div id="skills" class="tab-content">
+            <h2>Skill Set</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <img src="images/python.png" alt="Python">
+                    
+                </div>
+                <div class="skill-box">
+                    <img src="images/sql.png" alt="SQL">
+                </div>
+                <div class="skill-box">
+                    <img src="images/R.png" alt="CSS">
+                </div>
+                <div class="skill-box">
+                    <img src="images/html.png" alt="HTML">
+                    
+                </div>
+                <div class="skill-box">
+                    <img src="images/css.jpg" alt="CSS">
+                    
+                </div>
+                <div class="skill-box">
+                    <img src="images/js.png" alt="JavaScript">
+                    
+                </div>
+                <div class="skill-box">
+                    <img src="images/tableau.png">
+                </div>
+                
+                <div class="skill-box">
+                    <img src="images/powerbi.png">
+                </div>
+                <div class="skill-box">
+                    <img src="images/excel.png">
+                </div>
+             </div>
+        </div>
+        <!-- -----professional--------------------------------------------------------------------- -->
+        <div id="internship" class="tab-content">
+            <h2>Professional Experience</h2>
+            <div class = 'about-box-education'>
+                <img src="images/winmate_logo.jpeg" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>JUL 2025 - PRESENT</p>
+                    <h3>AI Project Manager</h3>
+                    <p class="sub-note">Winmate Inc.<span style="margin-left: 50px; margin-right: 50px;">|</span>IoT Development Department</p>
+                </div> 
+            </div> 
+            <div class = 'about-box-education'>
+                <img src="images/pwc.png" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>JUL 2024 - DEC 2024</p>
+                    <h3>Business Consultant Intern</h3>
+                    <p class="sub-note">PwC<span style="margin-left: 50px; margin-right: 50px;">|</span>Digital Transformation Team </p>
+                </div>  
+            </div>
+            <div class = 'about-box-education'>
+                <img src="images/dbs.png" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>JUL 2023 - AUG 2023</p>
+                    <h3>Technology and Operations Intern</h3>
+                    <p class="sub-note">DBS Bank<span style="margin-left: 50px; margin-right: 50px;">|</span>IT Infrastructure Team </p>
+                </div> 
+            </div> 
+        </div>
+        <!-- -----involvement--------------------------------------------------------------------- -->
+        <div id="experience" class="tab-content">
+            <h2>Campus Involvement</h2>
+            <div class = 'about-box-education'>
+                <img src="images/dac.png" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>Sep 2024 - PRESENT</p>
+                    <h3>Vice President</h3>
+                    <p class="sub-note">Data Analytics Club, NTU </p>
+                </div> 
+            </div> 
+            <div class = 'about-box-education'>
+                <img src="images/tedx.jpeg" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>SEP 2022 - AUG 2023</p>
+                    <h3>Member of Event Planning </h3>
+                    <p class="sub-note">TEDx National Taiwan University (TEDxNTU) </p>
+                </div>  
+            </div>
+            <div class = 'about-box-education'>
+                <img src="images/ntuoia.jpeg" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>SEP 2022 - FEB 2023</p>
+                    <h3>International Student Volunteer </h3>
+                    <p class="sub-note">Office of International Affairs, NTU </p>
+                </div> 
+            </div> 
+        </div>
+        <!-- -----education--------------------------------------------------------------------- -->
+        <div id="education" class="tab-content">
+            <h2>Educational History</h2>
+            <div class = 'about-box-education'>
+                <img src="images/ntu.jpeg" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>SEP 2021 - Jun 2025</p>
+                    <h3>National Taiwan University</h3>
+                    <p class="sub-note">Bachelor of Business Administration <span style="margin-left: 20px; margin-right: 20px;">|</span> Technology Management</p>
+                </div> 
+            </div> 
+            <div class = 'about-box-education'>
+                <img src="images/unil.jpeg" width = '150px'>
+                <div class = 'content-edu'>
+                    <p>SEP 2023 - FEB 2024</p>
+                    <h3>Université de Lausanne</h3>
+                    <p class="sub-note">Faculty of Business and Economics</p>
+                </div>  
+            </div>
+           
+        </div>
+    </div>
+</div>
+    <!-- -----Projects---------------------------------- -->
+
+<div id = 'Finance'>
+    <div class = 'container'>
+        <h1 class = 'sub-title'>View My Projects</h1>
+        <br>
+        <br>      
+        <div class = 'finance-list'>
+            <div class = "finance-item">
+                <a href="Winmate.html">
+                        <img src="images/AI.jpg" alt="">
+                    </a>
+                    <p class = 'time'>Jul 2025 ~ Present </p>
+                    <h2>Winmate Division AI Agents</h2>
+                    <p class = 'description'>
+                        Develop a department-specific AI chatbot using RAG and Open WebUI, improving cross-department knowledge retrieval efficiency
+                    </p>
+            </div>
+            <div class = "finance-item">
+                    <a href="wemo.html">
+                        <img src="images/WeMo.png" alt="">
+                    </a>
+                    <p class = 'time'>Mar 2025 ~ Jun 2025</p>
+                    <h2>WeMo Scooter Customer Segmentation Analysis</h2>
+                    <p class = 'description'>
+                        Analyzed 150K+ user and rental records, applied ML algorithms for user segmentation, 
+                        and identified key user groups to optimize marketing strategies
+                    </p>
+            </div>
+            <div class = "finance-item">
+                    <a href="housing.html">
+                        <img src="images/Taipei.jpg" alt="">
+                    </a>
+                    <p class = 'time'>Sep 2024 ~ Dec 2024</p>
+                    <h2>Housing Price Analysis</h2>
+                    <p class = 'description'>
+                        Leveraged R to analyze key factors influencing housing prices in Taipei 
+                        through data cleaning, exploration, and regression modeling
+                    </p>
+            </div>  
+        </div>
+    </div>
+</div>
+
+<!-- -----Interest_new---------------------------------------------------------------------------- -->
+<div>
+    <div id = 'interest_new'>
+        <h1 class = 'sub-title_new'><span>Interests </span> that bring my<br>personality to life</h1>
+        <div class="slider">
+            <div class = 'slide-track'>
+                <div class = 'slide'>
+                    <img src="images/spain.jpg">
+                    <h2 class="floating-text">
+                        Traveling
+                        <span>📍Spain. 2023</span>
+                    </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/hike.jpg">
+                    <h2 class="floating-text">
+                        Hiking
+                        <span>Calling nature my therapist</span>
+                    </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/gym.jpg">
+                    <h2 class="floating-text">
+                        Working Out
+                        <span>Training brings my determination to life</span>
+                    </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/swiss.jpg">
+                    <h2 class="floating-text">
+                        Traveling</span>
+                        <span>Exploring new places brings my perspective to life</span>
+                    </h2>
+                </div>
+               
+                <div class = 'slide'>
+                    <img src="images/food1.JPG">
+                    <h2 class="floating-text">
+                        Exploring Good Food
+                        <span>Every bite turns discovery into joy</span>
+                    </h2>
+                </div>
+                 <div class = 'slide'>
+                    <img src="images/iceland.JPG">
+                    <h2 class="floating-text">
+                        Traveling
+                        <span>📍Iceland. 2024 </span>
+                    </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/food2.jpg">
+                    <h2 class="floating-text">
+                        Exploring Good Food
+                        <span>My sweet tooth turns treats into tiny celebrations</span>
+                    </h2>
+                </div> 
+                <div class = 'slide'>
+                    <img src="images/spain.JPG">
+                    <h2 class="floating-text">
+                        Traveling
+                        <span style="color:black">📍Spain. 2023</span>
+                    </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/rome.JPG">
+                    <h2 class="floating-text">
+                        Traveling
+                        <span>📍Italy. 2024</span>
+                    </h2>
+                </div> 
+            </div> 
+        </div>   
+    </div>
+</div>
+
+<!-- -----Contact_new---------------------------------------------------------------------------- -->
+<div id = 'contact_info'>
+        <h1 class = 'sub-title'>Contact Me</h1>
+        <h5>Always eager to connect, collaborate, and create meaningful experiences.</p>
+        <div class = 'basic_info'>
+            <p><i class="fa-regular fa-envelope" onclick="copyEmail()"></i><br>hsinlu0511@gmail.com</p>
+            <p><i class="fa-regular fa-phone" onclick="copyPhoneNumber()"></i><br>(886) 905-511-597</p>
+            <p><a href="https://www.linkedin.com/in/hsin-jung-lu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a><br>Linkedin</p>
+        </div>
+        <hr class = 'bottom_line'>
+        <div class="copyright">
+            <p>Copyright © Ivy Lu.</p>
+        </div>   
+</div>
+
+<!-- -----JavaScript---------------------------------------------------------------------------- -->
+<script>
+        function showTab(tabName) {
+            // Hide all content
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.style.display = 'none');
+            
+            // Remove active class from all tabs
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Show the selected tab content
+            document.getElementById(tabName).style.display = 'block';
+
+            // Add active class to the clicked button
+            const activeButton = document.querySelector(`button[onclick="showTab('${tabName}')"]`);
+            activeButton.classList.add('active');
+        }
+
+        // Default to showing the 'skills' tab
+        showTab('skills');
+</script>
+<script>
+    function copyEmail() {
+        const email = "hsinlu0511@gmail.com"; // 你的 email 地址
+        const textArea = document.createElement("textarea");
+        textArea.value = email;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+
+        alert("Email address copied: "  + email);
+    }
+</script>
+<script>
+    function copyPhoneNumber() {
+        const phoneNumber = "(886) 905-511-597"; // 你的電話號碼
+        const textArea = document.createElement("textarea");
+        textArea.value = phoneNumber;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+
+        alert("Phone number copied: " + phoneNumber);
+    }
+</script>
+
+<script>
+const slider = document.querySelector('.slide-track');
+const rotationButton = document.getElementById('rotationButton');
+let isRotating = true;
+
+function toggleRotation() {
+    if (isRotating) {
+        slider.style.animationPlayState = 'paused';
+        rotationButton.classList.add('paused'); // Add a class to change icon appearance
+        rotationButton.classList.remove('fa-circle-play'); // Remove class for the existing image
+        rotationButton.classList.add('fa-circle-pause'); // Add class for the new image
+    } else {
+        slider.style.animationPlayState = 'running';
+        rotationButton.classList.remove('paused'); // Remove the class to reset icon appearance
+        rotationButton.classList.remove('fa-circle-pause'); // Remove class for the new image
+        rotationButton.classList.add('fa-circle-play'); // Add class for the existing image
+    }
+    isRotating = !isRotating;
+}
+
+rotationButton.addEventListener('click', toggleRotation);
+</script>
+
+</body>
+</html>

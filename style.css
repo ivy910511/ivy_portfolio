@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* add a smooth scroll */
+html{
+    scroll-behavior: smooth; 
+}
+
+
+/* the whole navigation */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 60px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+/* the links in the navigation */
+nav a {
+  display: inline-block; /* 讓連結橫向排列又可設定 padding */
+  color: #461352;
+  text-decoration: none; /* 去掉底線 */
+  padding: 12px 25px; /* 上下 12px; 左右 25px */
+  font-family: Arial;
+  font-size: 20px;
+  transition: 0.2s; /* animation */
+}
+
+/* Animation */
+nav a:hover {
+    text-decoration: underline; 
+    text-underline-offset: 3px;             
+    color: #c17ee4;
+}
+
+/* home */
+.home {
+    display: flex;                  /* 左右排列 */
+    align-items: center;            /* 垂直置中 */
+    justify-content: space-between; /* 左右拉開 */
+    background-color: #F2F2F7;
+    padding: 80px 0 0 0; /* 上、右、下、左 */
+    min-height: 100%; 
+}
+
+.home-text {
+    width: 45%;                     /* 左半邊文字 */
+    margin-left: 100px;
+    color: #472159;
+}
+
+.home-text h1 {
+    font-size: 66px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-text p {
+    font-size: 24px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: Arial;
+}
+
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img img {
+    width: 100%;
+    max-width: none;          /* 限制圖片最大寬度 */ 
+}
+
+
+/* About Me */
+#aboutMe{
+    background:#FAFAFA;
+    padding: 150px 0 0 0; /* 上、右、下、左 */
+    margin: 0 auto;
+}
+
+#aboutMe .sub-title{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    color: #472159;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    display: flex;
+    background-color: transparent; /* 設定 tabs 的背景顏色 */
+}
+
+.tab-button {
+    width: 120px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    border-top-left-radius: 10px; /* 左上角圓角 */
+    border-top-right-radius: 10px; /* 右上角圓角 */
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    text-align: center; /* 確保文字在按鈕內置中 */
+    box-shadow: 0px -5px 5px rgba(59, 59, 59, 0.15);
+    transition: 0.2s; /* animation */
+}
+
+.tab-button:hover {
+    background-color: white;
+    color: #c17ee4;
+    transform: scale(1.05);
+}
+
+.tab-button.active {
+    background-color: #F2F2F7; /* 設定選中的 tab 按鈕背景色 */
+    color: black;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    margin-top: 0; /* 移除與 tab 之間的間距 */
+    background-color: #F2F2F7; /* 設定 tab-content 的背景顏色與 tabs 相同 */
+    padding-bottom: 150px;
+}
+
+.tab-content h2 {
+    margin: 10px 40px;
+    font-size: 32px;
+}
+
+.about-box-education {
+    display: flex;                 /* 讓圖片與文字左右排列 */
+    align-items: center;           /* 垂直置中 */
+    background-color: white;       /* 白色背景 */
+    border-radius: 50px;           /* 變橢圓形 */
+    padding: 20px 30px;            /* 內距 */
+    margin: 30px 40px;           /* 每個橢圓之間距 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 柔和陰影 */
+    align-items: stretch; /* 讓圖片與文字同高 */
+}
+
+.about-box-education img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;             /* 保持比例裁切成正方形 */
+    margin: 10px 50px 10px 20px;   /* 上、右、下、左 */
+}
+
+.content-edu {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* ⭐️ 垂直平均排列 */
+}
+
+.sub-note {
+  margin-top: 12px;
+}
+
+
+.tab-content h3 {
+    font-size: 32px;
+}
+
+.tab-content p {
+    font-size: 18px;
+}
+
+/* About me - skills */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 一排三個 */
+    gap: 7%;                             /* 卡片間距 */
+    width: 75%;
+    margin: 30px auto;                  
+}
+
+.skill-box {
+    background: white;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;                   /* 保持正方形 */
+    display: flex;
+    flex-direction: column;                /* 上下排列：圖片+文字 */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box img {
+    max-width: 45%;       /* 圖片寬度調整，可依需求改 */
+    height: auto;
+    margin-bottom: 10px;  /* 圖片與文字間距 */
+}
+
+
+.skill-box h3 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Hover 效果（可選） */
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Projects */
+
+#Finance{
+    background:#FAFAFA ;
+    padding: 150px 0 150px 0;
+    margin: 0 auto;
+}
+
+#Finance .sub-title{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    color: #461352;
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+}
+
+.finance-list img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* 自動裁切圖片超出的部分 */
+    object-position: center;  /* 調整圖片顯示的部分，如 center, left, right, bottom */
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.7s;
+}
+
+.finance-list{
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    transition: scroll-behavior 0.5s ease-in-out; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;      /* 放大卡片後需要的上方空間 */
+    padding-bottom: 40px;   /* 放大卡片後需要的下方空間 */
+    margin: 15px 0;              /* 避免負 margin 導致裁切 */
+
+}
+
+.finance-list::-webkit-scrollbar {
+    display: none;
+}
+
+.finance-item {
+    position: relative; /* Add relative positioning to the div */
+    flex: 1 0 450px; /* make the div 350px wide */
+    background: white;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+    overflow: visible; /* 避免被自己的邊界裁切 */
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s; /* 平滑動畫 */
+}
+
+.finance-item:hover {
+    transform: scale(1.03); /* make the image bigger */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* 輕微陰影 */
+    z-index: 2;
+    
+}
+
+.finance-item p.time{
+    color: #6E6E73;
+    font-size: 13px;
+    font-weight: 550;
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.finance-item h2 {
+    color: #1D1D1F;
+    font-size: 25px;
+    font-weight: 550;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 15px;
+
+    /* 🔥 新增：固定高度讓 description 對齊 */
+    height: 60px;           
+    line-height: 1.2;       
+    display: flex;
+    align-items: flex-start; /* 讓第一行從上面開始，不會垂直置中 */
+}
+
+
+.finance-item p.description{
+    color: #6E6E73;
+    font-size: 15px;
+    font-weight: 550;
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+/* -----Interest_new--------------------------------------------------------------------------- */
+#interest_new {
+    background: #F2F2F7;
+    padding: 150px 0px 180px 0px;
+    overflow: hidden; 
+}
+
+#interest_new h1 {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    color: #1D1D1F;
+    margin-bottom: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 70px;
+}
+
+#interest_new h1 span {
+    background-image: linear-gradient(90deg, #86449B 0%, rgba(239, 78, 49, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* 調整滾動動畫效果 */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);  /* 從最左邊開始 */
+    }
+    100% {
+        transform: translateX(-50%); /* 滾動到中間，從頭開始 */
+    }
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;         /* 👉 想要滑動區佔螢幕 80% */
+    margin: 0 auto; 
+}
+
+/* 調整左側和右側的遮罩效果 */
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #F2F2F7 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 600px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: -300px;
+    top: 0;
+    transform: rotateZ(180deg);
+} 
+
+.slider::before {
+    left: -300px;
+    top: 0;
+}
+
+/* 設置 .slide-track 內部的滾動動畫 */
+.slide-track {
+    display: flex;
+    gap: 30px; /* 調整間距為 30px，讓圖片之間的間隙變寬 */
+    width: max-content; 
+    animation: scroll 50s linear infinite; /* 設置循環動畫，調整為你需要的速度 */
+}
+
+/* 每個 slide 設定為 flex 排版，讓圖片和文字垂直排列 */
+.slide-track .slide {
+    height: 400px;  /* 高度設為 300px */
+    width: 300px;   /* 寬度設為 300px */
+    position: relative;
+    flex: 0 0 300px; /* 每個 slide 是 300px */
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* 讓圖片和文字垂直排列 */
+    justify-content: flex-start; /* 讓文字靠上 */
+    align-items: flex-start; /* 讓文字靠左對齊 */
+}
+
+/* 圖片的顯示方式 */
+#interest_new .slide-track img {
+    width: 100%;  /* 讓圖片適應 slide 的寬度 */
+    height: 75%; /* 高度與寬度保持一致 */
+    object-fit: cover; /* 填充整個區域 */
+    object-position: center;
+    border-radius: 20px;
+}
+
+/* 把 floating-text 移到圖片下方，並靠左對齊 */
+#interest_new .floating-text {
+    position: static;   /* ❗取消 absolute */
+    margin-top: 12px;   /* 與圖片保持距離 */
+    margin-left: 10px;     /* 若你希望靠左 */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #c17ee4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.floating-text span {
+    display: block;   /* 換行用 block，而不是 <br> */
+    margin-top: 6px;
+    color: black;     /* 第二行顏色 */
+    font-size: 18px;  /* 第二行大小 */
+    font-weight: 500;
+    font-family: Arial;
+}
+
+#interest_new .slide-center {
+    position: relative; 
+    flex: 1 0 950px; 
+    background: rgb(192,55,145);
+    background: linear-gradient(90deg, rgba(192,55,145,1) 0%, rgba(239,78,49,1) 100%);
+    padding: 250px 10px 20px 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;    
+}
+
+#interest_new .slide-center h2 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* -----contact_new--------------------------------------------------------------------------- */
+#contact_info{
+    background: #FAFAFA;
+    padding: 150px 0 0px 0;
+    margin: 0 auto;
+    min-height: 100%; 
+}
+
+#contact_info .sub-title{
+    font-size: 66px;
+    font-weight: 500;
+    text-align: center;
+    color: #461352;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contact_info h5{
+    color: #461352;
+    font-size: 20px;
+    font-weight: 350;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+
+.basic_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 7%;                             
+    width: 75%;
+    margin: 6% auto; 
+}
+
+
+.basic_info p {
+    margin: 20px 0; 
+    padding: 0; 
+    font-size: 18px;
+    color: #461352;
+    text-align: center;  /* ⭐ 新增：讓 icon + 文字置中 */
+}
+#contact_info i {
+    text-decoration: none;
+    color: #817984; /* 預設顏色 */
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    cursor: pointer; /* 游標變手指 */
+}
+
+#contact_info i:hover {
+    color: #c17ee4; /* 懸停顏色 */
+    transform: scale(1.1); /* 可以加入放大效果 */
+}
+
+.bottom_line{
+    width: 100%; /* Adjust the width as needed */
+    margin-top: 18%; 
+    border: none;
+    border-top: 2px solid #D2D2D8;
+    border-radius: 5px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0;
+    font-size: 18px;
+    color: black;
+}
+

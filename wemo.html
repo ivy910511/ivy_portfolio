@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_project.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#aboutMe">About Me</a>
+        <a href="index.html#Finance">Project</a>
+        <a href="index.html#interest_new">Interest</a>
+        <a href="Ivy Lu_CV.pdf" target="_blank">Resume</a>
+        <a href="index.html#contact_info">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- -----header---------------------------------- -->
+        <div class="header">
+            <div class="header-text">
+                <h1>WeMo Scooter Customer Segmentation Analysis & Acquisition Strategy</h1>
+            </div>
+            <hr class = 'top-line'> <!---在標題下面畫一條線---->
+            <div>
+                <p class= "explanation" align = 'justify'>
+                This project was a collaboration between NTUDAC (National Taiwan University Data Analytics Club) and WeMo, 
+                Taiwan’s largest shared electric scooter company. Its primary objective was to help WeMo’s data and marketing teams identify key user segments 
+                to optimize marketing efforts and increase engagement among their most valuable customers.
+                </p>
+            </div>
+            <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">K-means</span>
+                <span class="tag">K-Prototypes</span>
+                <span class="tag">HDBSCAN</span>
+            </div>
+        </div>
+        <!-- -----Problem---------------------------------- -->
+        <div class="problem">
+            <h3>01</h3>
+            <h2>Problem</h2>
+            <p>WeMo is Taiwan’s largest shared electric scooter service, offering flexible, on-demand mobility for riders across major cities. 
+                As the user base grew, WeMo began generating extensive rental and behavioral data each day from a wide variety of riders. However, without a clear understanding of these user groups, 
+                it was challenging for the team to uncover meaningful insights, tailor marketing strategies, and prioritize high-value customer segments. This created a need for a more structured and data-driven approach to segmenting users and guiding future acquisition efforts.</p>
+        </div>
+        <!-- -----Goal---------------------------------- -->
+         <div class="goal">
+            <h3>02</h3>
+            <h2>Goal</h2>
+            <p>We aim to analyze the dataset of 150K+ users and rental records provided by WeMo to identify distinct customer segments using machine learning models, 
+                understand user behavior and cluster personas, and develop data-driven strategies to acquire new users and enhance engagement among key customer groups.</p>
+        </div>
+        <!-- -----Solution---------------------------------- -->
+         <div class="solution">
+            <h3>03</h3>
+            <h2>Solution</h2>
+            <p>Explain your solution or approach..</p>
+            <div class="solution-steps">
+                <div class="step">
+                    <img src="images/cluster.png" alt="Step 1">
+                    <p>
+                        <strong>Key feature 1: K-Prototypes ML Algorithm</strong><br>
+                        In this project, we analyzed over 150,000 user and rental records and applied various machine learning algorithms for user segmentation, 
+                        including K-Means, K-Prototypes, and HDBSCAN. Ultimately, we chose K-Prototypes to segment users into six distinct clusters. 
+                        This segmentation enabled us to design tailored strategies for each user type, laying the foundation for targeted marketing and customer acquisition efforts.
+                    </p>
+                    
+                </div>
+                <div class="step">
+                    <img src="images/RFM.png" alt="Step 2"> 
+                    <p>
+                        <strong>Key feature 2: RFM Model to Identify High-Value Users</strong><br>
+                        Using the six clusters derived from K-Prototypes, we applied the RFM (Recency, Frequency, Monetary) model to identify high-value users within each group. 
+                        The analysis revealed that commuting office workers (Cluster 0) and commuting college students (Cluster 1) contained the highest proportion of high-value users. 
+                        Based on these insights, we developed six targeted marketing strategies to engage and retain these key user groups effectively.
+                    </p>
+                    
+                </div>
+                <div class="step">
+                    <img src="images/questionaire.jpg" alt="Step 3">
+                    <p>
+                        <strong>Key feature 3: Survey-Driven Strategy Validation</strong><br>
+                        To evaluate the potential impact of our marketing strategies, we designed and distributed a user survey assessing the effectiveness of six proposed initiatives on users’ willingness to ride WeMo scooters. 
+                        The insights provided actionable recommendations for prioritizing marketing initiatives and optimizing user engagement.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- -----demonstration---------------------------------- -->
+        <div class = "project_demonstration">
+            <h1>Final Report</h1>
+            <embed src="projects/WeMo Slide.pdf" width="90%" height="700px"/>
+        </div>
+        <!-- -----copyright---------------------------------- -->
+        <hr class = 'bottom_line'>
+        <div class="copyright">
+            <p>Copyright © Ivy Lu.</p>
+        </div> 
+
+    </div>
+</body>
+</html>

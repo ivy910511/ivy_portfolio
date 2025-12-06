@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_project.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#aboutMe">About Me</a>
+        <a href="index.html#Finance">Project</a>
+        <a href="index.html#interest_new">Interest</a>
+        <a href="Ivy Lu_CV.pdf" target="_blank">Resume</a>
+        <a href="index.html#contact_info">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- -----header---------------------------------- -->
+        <div class="header">
+            <div class="header-text">
+                <h1>Housing Price Analysis</h1>
+            </div>
+            <hr class = 'top-line'> <!-- -----在標題下面畫一條線------- -->
+            <div>
+                <p class= "explanation" >
+                This is a project I worked on at school, primarily aimed at using R to analyze Taipei real estate transaction data to identify key factors influencing housing prices.
+                Our team performed data cleaning, exploratory data analysis, and regression modeling to understand how property characteristics affect both unit price and total price.
+                </p>
+            </div>
+            <div class="skill-tags">
+                <span class="tag">R</span>
+                <span class="tag">RStudio</span>
+                <span class="tag">Statistical Analysis</span>
+                <span class="tag">Data Visualization</span>
+            </div>
+        </div>
+        <!-- -----Problem---------------------------------- -->
+        <div class="problem">
+            <h3>01</h3>
+            <h2>Problem</h2>
+            <p>Housing prices in Taipei are influenced by a complex mix of physical, legal, and locational attributes, 
+                making it difficult for buyers, sellers, and policymakers to evaluate property value objectively. 
+                Public transaction data is often noisy, inconsistent, or incomplete, and without proper modeling, 
+                it is challenging to identify which factors truly drive price variations. 
+                This project aims to address the challenge of extracting meaningful insights from imperfect data to deliver a reliable and data-driven understanding of Taipei’s housing market.</p>
+        </div>
+        <!-- -----Goal---------------------------------- -->
+         <div class="goal">
+            <h3>02</h3>
+            <h2>Goal</h2>
+            <p>To identify the key factors influencing housing transaction prices by conducting exploratory data analysis (EDA), regression modeling, and model optimization, 
+                with a focus on understanding the determinants of unit price per ping and total property price.</p>
+        </div>
+        <!-- -----Solution---------------------------------- -->
+         <div class="solution">
+            <h3>03</h3>
+            <h2>Solution</h2>
+            <p>Explain your solution or approach..</p>
+            <div class="solution-steps">
+                <div class="step">
+                    <img src="images/transformation.png" alt="Step 1">
+                    <p>
+                        <strong>Key feature 1: Distribution Analysis & Transformation</strong><br>
+                        Before building our models, we conducted thorough comprehensive Exploratory Data Analysis (EDA) to inspect the distribution of each variable. 
+                        By plotting histograms for continuous features, we observed substantial right skewness in several predictors. 
+                        Based on these findings, we applied log transformations to stabilize variance and improve the suitability of these variables for regression modeling.
+                    </p>
+                    
+                </div>
+                <div class="step">
+                    <img src="images/outliers.png" alt="Step 2"> 
+                    <p>
+                        <strong>Key feature 2: Outlier & Influence Diagnostics</strong><br>
+                        To ensure a robust and unbiased model, we systematically identified and removed outliers and influential observations to ensure a more reliable model. 
+                        Using Cook’s Distance, studentized residuals, and leverage values, we flagged data points that exerted disproportionate influence on the model. 
+                        The refined dataset was then used for subsequent analysis.
+                    </p>
+                    
+                </div>
+                <div class="step">
+                    <img src="images/evaluate.png" alt="Step 3">
+                    <p>
+                        <strong>Key feature 3: Model Diagnostics & Validation</strong><br>
+                        After building our regression models, we performed a comprehensive diagnostic check to evaluate their validity. We examined scatterplots of residuals, residual-versus-fitted plots, residual histograms, and Q-Q plots. 
+                        These visual tools helped us assess linearity, homoscedasticity, and the normality of residuals, ensuring the robustness of our final model.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- -----demonstration---------------------------------- -->
+        <div class = "project_demonstration">
+            <h1>Final Presentation</h1>
+            <embed src="projects/Statistics Slide.pdf" width="90%" height="700px"/>
+        </div>
+        <!-- -----copyright---------------------------------- -->
+        <hr class = 'bottom_line'>
+        <div class="copyright">
+            <p>Copyright © Ivy Lu.</p>
+        </div> 
+
+    </div>
+</body>
+</html>
