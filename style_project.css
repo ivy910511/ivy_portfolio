@@ -147,6 +147,7 @@ p {
     align-items: center;
     justify-content: flex-start; /* 左對齊 */
     gap: 30px;
+    margin-top: 5px;
     margin-bottom: 40px;
 }
 
@@ -231,3 +232,4 @@ p {
         font-size: 2rem;
     }
 }
+
